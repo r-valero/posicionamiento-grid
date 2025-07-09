@@ -9,6 +9,7 @@
 }
 
 body {
+  justify-content: center;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -79,8 +80,8 @@ footer {
 }
 
 section {
-  min-width: 601px;
-  min-height: 601px;
+  min-width: 400px;
+  min-height: 400px;
 }
 
 @media (max-width: 600px) {
@@ -96,6 +97,6 @@ section {
       'footer';
   }
   section {
-    min-width: 100%;
+    min-width: 400px;
   }
 }
