@@ -24,13 +24,15 @@ body {
 
 header {
   grid-area: header;
-  background-color: var(--primary-color);
+  color: var(--primary-color);
+  background-color: var(--blue-color);
   padding: var(--spacing);
   border: var(--border);
 }
 
 main {
   grid-area: main;
+  color: var(--blue-color);
   background-color: var(--primary-color);
   padding: var(--spacing);
   border: var(--border);
@@ -41,7 +43,8 @@ main {
 
 footer {
   grid-area: footer;
-  background-color: var(--primary-color);
+  color: var(--primary-color);
+  background-color: var(--orange-color);
   padding: var(--spacing);
   border: var(--border);
 }
@@ -76,6 +79,23 @@ footer {
 }
 
 section {
-  min-width: 500px;
-  min-height: 500px;
+  min-width: 601px;
+  min-height: 601px;
+}
+
+@media (max-width: 600px) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'header'
+      'school'
+      'student'
+      'main'
+      'time'
+      'alumni'
+      'footer';
+  }
+  section {
+    min-width: 100%;
+  }
 }
